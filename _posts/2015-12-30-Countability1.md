@@ -4,7 +4,7 @@ title: The Set of All Strings is Countable
 excerpt: Proof that the set of strings over a finite alphabet is countable.
 ---
 
-###[{{ post.title }}]({{ site.baseurl }}{{ post.url }}) [[Lecture Video](https://www.udacity.com/course/viewer#!/c-ud557/l-1719018606/m-1814528654)]
+###[{{ page.title }}]({{ site.baseurl }}{{ page.url }}) [[Lecture Video](https://www.udacity.com/course/viewer#!/c-ud557/l-1719018606/m-1814528654)]
 
 {% include toggle.html %}
 
