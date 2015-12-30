@@ -1,7 +1,11 @@
 ---
 layout: blog
 ---
-      {% for post in paginator.posts %}
+
+    Select a Proof:
+    <hr>
+
+      {% for post in paginator.posts reversed %}
 
       <div class="post">
         <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
