@@ -1,67 +1,37 @@
+---
+title: CommentedProofs
+---
 <!DOCTYPE html>
 <html>
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="CommentedProofs : Long form, extensively commented proofs from the Georgia Tech OMS CS-6505 lectures">
-
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
-
-    <title>CommentedProofs</title>
-  </head>
+{% include head.html %}
 
   <body>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/cgearhart/CommentedProofs">View on GitHub</a>
-
-          <h1 id="project_title">CommentedProofs</h1>
-          <h2 id="project_tagline">Long form, extensively commented proofs from the Georgia Tech OMS CS-6505 lectures</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/cgearhart/CommentedProofs/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/cgearhart/CommentedProofs/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
+{% include header.html %}
 
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <h3>
-<a id="commented-proofs" class="anchor" href="#commented-proofs" aria-hidden="true"><span class="octicon octicon-link"></span></a>Commented Proofs</h3>
 
-<p>Many OMS students who are not used to the formal mathematical study of computer science at the level of rigor required for the Computability, Complexity, &amp; Algorithms course (CS-6505) have struggled to understand the proofs presented in lecture or writing such proofs on their own. The lectures are presented based on the assumption that every student has taken (and remembers) an undergrad curriculum including discrete mathematics &amp; algorithms, but pre-reqs are not enforced on enrollment in graduate courses at Georgia Tech, and many students in the OMS haven't looked at those subjects in a decade or more. Commented Proofs tries to reduce the expectation of prior knowledge about the subject by presenting the proofs for each theorem from lecture with additional details and context (like comments in source code) at a level appropriate for students who are either new or returning to the formal mathematical study of CS.</p>
+<h4>An Exercise for the Reader</h4>
 
-<h3>
-<a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h3>
+<p>Many OMS students taking Computability, Complexity, &amp; Algorithms course (CS-6505) have complained that the proofs presented in lecture are too terse, and don't provide enough detail or context to properly understand the material. The lectures were prepared with the expectation that every student has previously taken an undergrad curriculum including discrete mathematics &amp; algorithms, but pre-reqs are not enforced in graduate courses at Georgia Tech, and many students in the OMS haven't looked at those subjects in a decade or more.</p>
 
-<p>Chris Gearhart (<a href="https://github.com/cgearhart" class="user-mention">@cgearhart</a>) is an OMS student.</p>
+<p>Commented Proofs is an attempt to reduce the dependency on prior knowledge by presenting the proof for each theorem from lecture in greater detail to provide the context that might be missing for some students - similar in function to the comments included in source code.</p>
+
+<center><h4><a href="/blog">Continue</a></h4></center>
+
+<h4>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h4>
+
+<p>Chris Gearhart (<a href="https://github.com/cgearhart" class="user-mention">@cgearhart</a>) is an OMS student. Comments and feedback are welcome &amp; appreciated.</p>
+      
       </section>
     </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">CommentedProofs maintained by <a href="https://github.com/cgearhart">cgearhart</a></p>
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-71820250-1");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
+{% include footer.html %}
+{% include tracking.html %}
 
   </body>
 </html>

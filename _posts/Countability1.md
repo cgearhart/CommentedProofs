@@ -1,0 +1,37 @@
+---
+layout: blog
+title: The Set of All Strings is Countable
+excerpt: Proof that the set of strings over a finite alphabet is countable.
+---
+
+###[{{ page.title }}]({{ page.url }}) [[Lecture Video](https://www.udacity.com/course/viewer#!/c-ud557/l-1719018606/m-1814528654)]
+
+{% include toggle.html %}
+
+**Thm:** For any finite alphabet \\(\Sigma\\), the set of strings \\(\Sigma^*\\) is countable.
+
+**Pf:**  <span class="comment">/* Declining to specify a method of proof implies that it is a direct proof.*/</span>
+
+<span class="comment">/* Start by stating the definitions of the terms in the claim to identify what would be a sufficient argument for the proof.*/</span>
+
+By definition, a set is countable if it can be put in one-to-one correspondence with the natural numbers. <span class="comment">/* The claim can be stated in terms of this definition as an assertion of existence: "there must exist a one-to-one correspondence between the natural numbers and the set of all strings that can be made from a finite alphabet". Like all existence proofs, a sufficient argument for direct proof is to provide an example, since that proves one exists.*/</span> Thus, a sufficient argument to prove the claim is to show an example of a one-to-one correspondence between the set of strings over a finite alphabet and the natural numbers.
+
+<span class="comment">/* Recall that the [natural numbers](https://en.wikipedia.org/wiki/Natural_number) are the "counting numbers": \\( \\{ 1, 2, 3, ..., \infty \\} \\), and a one-to-one correspondence is a [bijection](https://en.wikipedia.org/wiki/Bijection,_injection_and_surjection); a function is injective when "the set of inputs (domain) is no bigger than the set of outputs (codomain)", it is surjective when "the codomain is no bigger than the domain", and it is bijective when it is both injective & surjective - which means that the set of inputs and the set of outputs must be the same size.*/</span>
+
+According to the definition of the [kleene star](https://en.wikipedia.org/wiki/Kleene_star) operator<span class="comment"> /* refer to: [Operations on Languages](https://www.udacity.com/course/viewer#!/c-ud557/l-1719018606/m-4909409536) */</span>, the set of all strings can be partitioned into subsets according to length as follows:
+
+$$\Sigma^* = \bigcup_{n=0}^{\infty} \Sigma^n$$
+
+<span class="comment">/* This definition means that \\( \Sigma^* \\) is the set of all strings that can be made by concatenating any combination of letters from the alphabet \\( \Sigma \\), which is equivalent to the union of all strings of each length \\( (k=1, 2, ... ) \\). Note that we can write $$\Sigma^*$$ as a union this way because every string is finite (by definition), so this union contains all possible strings.*/</span>
+
+For an alphabet with k characters, there are $$k^n$$ words of length $$n$$. <span class="comment">/* This can be easily verified by writing down the strings of length $$n$$ for a particular alphabet, or in the general case by recognizing that each character in a string can take on one of $$k$$ values, so for $$n$$ characters there must be $$k^n$$ possible strings.*/</span> Without the loss of generality, consider the alphabet \\( \Sigma= \\{ 0,1 \\} \\) (any other finite alphabet with more letters will simply have a larger $$k$$), and define a one-to-one correspondence between the elements in each subset of strings and the next \\( 2^n \\) natural numbers.
+
+\\( \\{ 1 \\} \rightarrow \\{ \varepsilon \\} \\)  <span class="comment">/* Note: \\( \varepsilon \\) is the empty string./*</span><br>
+\\( \\{ 2,3 \\} \rightarrow \\{ "0", "1" \\} \\)<br>
+\\( \\{ 4,5,6,7 \\} \rightarrow \\{ "00", "01", "10", "11" \\} \\)<br>
+\\( ... \\)<br>
+\\( \\{ N_{n-1}+1, N_n \\} \rightarrow \\{ "000...0", ..., "111...1" \\} \\)
+
+The order within each subset of strings doesn't matter as long as there is only one natural number for each substring, so choosing lexicographical order is sufficient to complete the correspondence. <span class="comment">/* [Lexicographically](https://en.wikipedia.org/wiki/Lexicographical_order) basically means alphabetical order.*/</span>
+
+QED <span class="comment">/* The proof is complete because we have shown an example of a one-to-one correspondence between strings over a finite alphabet and the natural numbers.*/</span>
