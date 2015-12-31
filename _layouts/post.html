@@ -19,7 +19,8 @@
 
 		<input id="commentToggle" type="checkbox" onclick="toggleComments();" checked> <label for="commentToggle">Show/Hide Comments</label>
 
-		<p><strong>Thm:</strong> {{ page.theorem }} [<a href="{{ page.lecture_link }}">Lecture Video</a>]</p>
+		<p><strong>Thm:</strong>  [<a href="{{ page.lecture_link }}">Lecture Video</a>]</p>
+		<p>{{ page.theorem }}</p>
 
 {{ content }}
 
