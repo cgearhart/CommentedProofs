@@ -1,7 +1,7 @@
 baseurl: "/CommentedProofs"
 
 paginate: 5
-paginate_path: "CommentedProofs/blog/page:num/"
+paginate_path: "blog/page:num/"
 
 defaults:
   -
