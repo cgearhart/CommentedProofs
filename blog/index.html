@@ -5,11 +5,12 @@ layout: blog
     Select a Proof:
     <hr>
 
-      {% for post in paginator.posts reversed %}
+      {% assign posts = (site.posts | sort: 'proof_id') %}
+      {% assign start = paginator.page | minus:1 | times:paginator.per_page %}
+      {% for post in posts offset:start limit:paginator.per_page %}
 
       <div class="post">
         <h3><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
-
         {{ post.excerpt }}<br>
       </div>
 

@@ -342,7 +342,7 @@ Full-Width Styles
 }
 
 #main_content {
-  padding: 30px 0;
+  padding: 15px 0;
   min-height: calc(100vh - 285px);
   min-height: -webkit-calc(100vh - 285px);
   min-height: -moz-calc(100vh - 285px);
@@ -350,6 +350,11 @@ Full-Width Styles
 
 #main_content a {
   color:#373737;
+  font-weight: bold;
+}
+
+#main_content .inactive {
+  color:#a7a7a7;
 }
 
 #main_content a:hover, #main_content a:focus {
