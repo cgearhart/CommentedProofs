@@ -102,7 +102,7 @@ footer p {
 }
 
 a, a:visited {
-  text-decoration: none;
+  /*text-decoration: none;*/
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -279,8 +279,8 @@ Full-Width Styles
   color:#080;
 }
 
-#main_content .comment a, #main_content .comment a:visited {
-  font-weight: bold;
+#main_content .comment a, a:visited {
+  /*font-weight: bold;*/
   color:#080;
 }
 
@@ -305,11 +305,7 @@ Full-Width Styles
   background: linear-gradient(top, #373737, #212121);
 }
 
-#header_wrap a {
-  color: #fff;
-}
-
-#header_wrap a:hover, #header_wrap a:visited, #header_wrap a:focus {
+#header_wrap a, a:hover, a:visited, a:focus {
   color: #fff;
   text-decoration: none;
 } 
@@ -348,24 +344,23 @@ Full-Width Styles
   min-height: -moz-calc(100vh - 285px);
 }
 
-#main_content a {
-  color:#373737;
-  font-weight: bold;
-}
-
 #main_content .inactive {
   color:#a7a7a7;
 }
 
-#main_content a:hover, #main_content a:focus {
-  text-decoration: none;
+#main_content a {
   color:#000000;
+}
+
+#main_content a:hover, a:focus {
+  /*text-decoration: none;*/
+  font-weight:bold;
 } 
 
 #pagination {
   width: 100%;
-  position: absolute;
-  bottom: 10px;
+  /*position: absolute;*/
+  /*bottom: 10px;*/
   text-align: center;
 }
 
